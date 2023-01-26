@@ -4,7 +4,7 @@ Cypress.on("uncaught:exception", (err, runnable) => {
 /// <reference types= "cypress" />
 
 describe("Testing the login page", () => {
-  // NOTE LP-01
+  // NOTE LP-01git
   it.only("LP-01: Verify that the user is able to login successfully with a valid username and valid password.", () => {
     cy.login("Admin", "admin123");
     cy.url().should("include", "dashboard/index");
